@@ -1,0 +1,34 @@
+//
+   Created by ather on 12/22/13.
+extends ../layout
+block content
+        h3  Customer List
+        table(class='gridtable')
+             tr
+                 th
+                 th Name
+                 th Address
+                 th City
+                 th State
+                 th Zip
+                 th Edit
+                 th Delete
+             each cust in customers
+                 tr
+                    td
+                        a(href='/customers/view/#{cust.id}') #{cust.id}
+                    td #{cust.name}
+                    td #{cust.address}
+                    td #{cust.city}
+                    td #{cust.state}
+                    td #{cust.zip}
+                    td
+                        a(href='/customers/edit/#{cust.id}') Edit
+                    td
+                        a(href='/customers/delete/#{cust.id}') Delete
+        p
+        //-This is a shortcut way to create a div and apply class menu
+        #link
+            a(href='/customers/create') Add new customer
+
+

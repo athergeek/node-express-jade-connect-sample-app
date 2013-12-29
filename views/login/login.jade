@@ -1,0 +1,22 @@
+//
+   Created by ather on 12/22/13.
+extends ../layout
+block content
+    H1 Please enter your login id and password.
+    form(method="POST", action='/login')
+        table
+            tr
+                td
+                    label(for="CustomerName:") User Id:
+                td
+                    input(name="username",id="username")
+            tr
+                td
+                    label(for="Password:") Password:
+                td
+                    input(name="password",id="password",type="password")
+             tr
+                td
+                td
+            input(type="submit",value="Sign In")
+

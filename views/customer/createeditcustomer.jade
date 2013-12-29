@@ -1,0 +1,40 @@
+//
+   Created by ather on 12/22/13.
+
+extends ../layout
+block content
+    p=heading
+    -cust = customer
+    form(method="POST", action='/customers/'+addeditflag)
+
+        table
+            tr
+                td
+                    label(for="CustomerName:") Customer Name:
+                td
+                    input(name="hiddenid", type="hidden", value="#{cust.id}")
+                    input(name="name",id="name",value="#{cust.name}")
+            tr
+                td
+                    label(for="Address:") Address:
+                td
+                    input(name="address",id="address",value="#{cust.address}")
+            tr
+                td
+                    label(for="City:") City:
+                td
+                    input(name="city",id="city",value="#{cust.city}")
+            tr
+                td
+                    label(for="State:") State:
+                td
+                    input(name="state",id="state",value="#{cust.state}")
+            tr
+                td
+                    label(for="Zip:") Zip:
+                td
+                    input(name="zip",id="zip",value="#{cust.zip}")
+            tr
+                td
+                td
+            input(type="submit",value="Save Customer")

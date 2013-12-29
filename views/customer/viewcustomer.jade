@@ -1,0 +1,39 @@
+//
+   Created by ather on 12/22/13.
+extends ../layout
+block content
+                h3 Customer Details
+                table
+                    -cust = customer
+                    tr
+                        td
+                            label(for="CustomerName:") Customer Name:
+                        td
+                            strong #{cust.name}
+                    tr
+                        td
+                            label(for="Address:") Address:
+                        td
+                           strong #{cust.address}
+                    tr
+                        td
+                            label(for="City:") City:
+                        td
+                           strong #{cust.city}
+                    tr
+                        td
+                            label(for="State:") State:
+                        td
+                           strong #{cust.state}
+                    tr
+                        td
+                            label(for="Zip:") Zip:
+                        td
+                            strong #{cust.zip}
+                    tr
+                        td
+                        td
+                p
+                //-This is a shortcut way to create a div and apply class menu
+                #link
+                a(href='/customers') Go back to details
