@@ -35,32 +35,56 @@ launch command prompt and go into this sample app folder and type
 This will install all packages that this application is dependent upon.
 
 ## Folder Structure
--node-express-jade-connect-sample-app
-	-config
-	-db
-	-public
-	-redis-2.6-server
-	-routes
-	-views
+```
+-node-express-jade-connect-sample-app/
+	|_config/  ( configurations )
+	|_db/      ( database layer 
+	|_public/ ( css/htmls etc )
+	|_redis-2.6-server/ ( redis server exe )
+	|_routes/ ( all routes )
+	|_views  ( all views )
+	|_index.js
+	
+```	
+
+
+## Directory structure
+
+-app/
+  |__controllers/
+  |__models/
+  |__mailer/
+  |__views/
+-config/
+  |__routes.js
+  |__config.js
+  |__passport.js (auth config)
+  |__imager.js (imager config)
+  |__express.js (express.js configs)
+  |__middlewares/ (custom middlewares)
+-public/
+
+
+	
 
 ## Features
 This application has following features.
 
-1) Basic application structure of your application ( it is not the BEST application structure and may need some
+* Basic application structure of your application ( it is not the BEST application structure and may need some
     improvements. I am open for suggestions )
-2) Basic route design streategey.
-3) How to create a seperate configuration file ( just like web.config in ASP.NET application )
-4) How to create/use Jade views and how to structure them.
-5) How to use style sheets and stylus.style template.
-6) How to create Jade layouts.
-7) How to use sessions.
-8) How to use cookies.
-9) How to use logger
-10) How to implement basic authentication.
-11) How to implement form based authentication
-12) How to show custom error page in jade views.
-13) How to serve static files
-14) How to show a page when user tries to use a route which is not relted/does not exists to our system.
+* Basic route design streategey.
+* How to create a seperate configuration file ( just like web.config in ASP.NET application )
+* How to create/use Jade views and how to structure them.
+* How to use style sheets and stylus.style template.
+* How to create Jade layouts.
+* How to use sessions.
+* How to use cookies.
+* How to use logger
+* How to implement basic authentication.
+* How to implement form based authentication
+* How to show custom error page in jade views.
+* How to serve static files
+* How to show a page when user tries to use a route which is not relted/does not exists to our system.
 
 
 ## Installation
@@ -111,92 +135,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Features
-
-  * Built on [Connect](http://github.com/senchalabs/connect)
-  * Robust routing
-  * HTTP helpers (redirection, caching, etc)
-  * View system supporting 14+ template engines
-  * Content negotiation
-  * Focus on high performance
-  * Environment based configuration
-  * Executable for generating applications quickly
-  * High test coverage
-
-## Philosophy
-
-  The Express philosophy is to provide small, robust tooling for HTTP servers, making
-  it a great solution for single page applications, web sites, hybrids, or public
-  HTTP APIs.
-
-  Built on Connect, you can use _only_ what you need, and nothing more. Applications
-  can be as big or as small as you like, even a single file. Express does
-  not force you to use any specific ORM or template engine. With support for over
-  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js),
-  you can quickly craft your perfect framework.
-
-## More Information
-
-  * [Website and Documentation](http://expressjs.com/) stored at [visionmedia/expressjs.com](https://github.com/visionmedia/expressjs.com)
-  * Join #express on freenode
-  * [Google Group](http://groups.google.com/group/express-js) for discussion
-  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates
-  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)
-  * [Русскоязычная документация](http://jsman.ru/express/)
-  * Run express examples [online](https://runnable.com/express)
-
-## Viewing Examples
-
-Clone the Express repo, then install the dev dependencies to install all the example / test suite dependencies:
-
-    $ git clone git://github.com/visionmedia/express.git --depth 1
-    $ cd express
-    $ npm install
-
-Then run whichever tests you want:
-
-    $ node examples/content-negotiation
-
-You can also view live examples here:
-
-<a href="https://runnable.com/express" target="_blank"><img src="https://runnable.com/external/styles/assets/runnablebtn.png" style="width:67px;height:25px;"></a>
-
-## Running Tests
-
-To run the test suite, first invoke the following command within the repo, installing the development dependencies:
-
-    $ npm install
-
-Then run the tests:
-
-    $ make test
-
-## Contributors
-
-  https://github.com/visionmedia/express/graphs/contributors
 
