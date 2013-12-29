@@ -47,26 +47,6 @@ This will install all packages that this application is dependent upon.
 	
 ```	
 
-
-## Directory structure
-
--app/
-  |__controllers/
-  |__models/
-  |__mailer/
-  |__views/
--config/
-  |__routes.js
-  |__config.js
-  |__passport.js (auth config)
-  |__imager.js (imager config)
-  |__express.js (express.js configs)
-  |__middlewares/ (custom middlewares)
--public/
-
-
-	
-
 ## Features
 This application has following features.
 
@@ -85,31 +65,6 @@ This application has following features.
 * How to show custom error page in jade views.
 * How to serve static files
 * How to show a page when user tries to use a route which is not relted/does not exists to our system.
-
-
-## Installation
-
-    $ npm install -g express
-
-## Quick Start
-
- The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:
-
- Create the app:
-
-    $ npm install -g express
-    $ express /tmp/foo && cd /tmp/foo
-
- Install dependencies:
-
-    $ npm install
-
- Start the server:
-
-    $ node app
-
-
-
 
 ## License
 
@@ -135,4 +90,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
